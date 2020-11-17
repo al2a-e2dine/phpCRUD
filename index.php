@@ -33,6 +33,8 @@ include_once('connect.php');
     <th>age</th>
     <th>adr email</th>
     <th>num de téléphone</th>
+    <th>modifier</th>
+    <th>supptrimer</th>
     </tr>
     </thead>
     <tbody>
@@ -51,6 +53,16 @@ include_once('connect.php');
     <td><?= $row['age'] ?></td>
     <td><?= $row['email'] ?></td>
     <td><?= $row['phone'] ?></td>
+    <td>
+      <a href="update_emp.php">
+        <button class="btn btn-success btn-block">Modifier</button>
+      </a>
+    </td>
+    <td>
+      <a href="delete_emp.php">
+        <button class="btn btn-danger btn-block">Supprimer</button>
+      </a>
+    </td>
     </tr>
     <!-- end -->
     <?php } ?>
